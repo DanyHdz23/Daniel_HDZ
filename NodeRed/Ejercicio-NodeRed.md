@@ -10,10 +10,10 @@ docker ps -a
  ## 2. Ingresar a localhost:1880
     
 __1. Nodo Inject__
-- Insertar un nodo inject y dar doble click
+- Insertar un nodo inject y dar doble clic
 - Propiedades del nodo actual:
     - __Name__: Nombre del nodo 
-    - __msg.payload__: Contenido que regresaraá el nodo una vez activado
+    - __msg.payload__: Contenido que regresará el nodo una vez activado
     - __mfg.topic__: Tema que retornará el nodo cunado se active
     - __Repeat__: Tiempo de activación del nodo
 
@@ -24,13 +24,13 @@ __2. Nodo Debug__
 
 __3. Ejecutar el programa__
 - Deploy y abrir consola de depuración
-- Click en ícono del insecto.
+- Clic en ícono del insecto.
 - Enviar mensaje con el nodo inject (_cuadro azul_)
 Observará números en la consola de depuración; el tiempo esta marcado en formato UNIX 1970. (Segundos) 
 
 __4. Nodo Funcion__
 - Este nodo nos permite manipular el contenido del objeto msg que recibe. En JavaScript.
-- Este nodo se conecta entre la saldda de inject y la entrada de debug.
+- Este nodo se conecta entre la salida de inject y la entrada de debug.
     - __Name__: Nombre del nodo
     - __Setup__: Configura el número de nodos y los modulos externos que usa
     - __On start__: El código escrito correra al iniciar flow
@@ -47,4 +47,8 @@ msg.payload = date.toString();
 return msg; 
 ```
 Este código nos mermite visualizar hora y fecha en una lectura legible para humanos.
-- Dar click en Deploy
+- Dar clic en Deploy
+
+__4. Desactivar Flow__
+- Hacer doble clic en la pestaña flow
+- Hacer clic en disable, clic en done y deploy

@@ -32,6 +32,6 @@ __2. Igresar a localhost:1880__
     - Editar el apartado label: _text_ por _Fecha y Hora_ y hacer clic en done
 
 __3. Ingresar a localhost:1880/ui__
-Observará un apartado gráfico de la Fecha y Hora.
+- Observará un apartado gráfico de la Fecha y Hora.
 
 ![](https://github.com/DanyHdz23/Daniel_HDZ/blob/main/NodeRed/Imagenes/Screenshot%20from%202023-07-23%2009-11-32.png)

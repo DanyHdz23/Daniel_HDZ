@@ -49,6 +49,6 @@ return msg;
 Este código nos mermite visualizar hora y fecha en una lectura legible para humanos.
 - Dar clic en Deploy
 
-__4. Desactivar Flow__
+__5. Desactivar Flow__
 - Hacer doble clic en la pestaña flow
 - Hacer clic en disable, clic en done y deploy

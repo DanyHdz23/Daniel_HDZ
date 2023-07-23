@@ -6,7 +6,7 @@ __1. Preparación de NodeRed__
 - Para visualizar el contenedores:
     - docker ps -a
 - Inicializar el contenedor docker:
-    - docker start _ID DEL CONTENEDOR "DOCKER"_
+    - docker start _ID DEL CONTENEDOR "NodeRed"_
 
 __2. Igresar a localhost:1880__
 

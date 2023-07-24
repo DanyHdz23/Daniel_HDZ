@@ -19,7 +19,7 @@ __2. Ingresar a localhost:1880__
     ![](https://github.com/DanyHdz23/Daniel_HDZ/blob/main/NodeRed/Imagenes/Screenshot%20from%202023-07-24%2014-11-42.png)
 
 - __Nodo MQTT in__
-    Este nodo nos permite utilizar diversos protocolos de internet para recibir datos.
+- Este nodo nos permite utilizar diversos protocolos de internet para recibir datos.
     - Agregar el nodo _mqtt in_ de la sección (__network__) de paletas de nodos al editor visual.
     - Editar el nodo _mqtt in_ haciendo doble clic, editar el server y hacer Add. 
     ![](https://github.com/DanyHdz23/Daniel_HDZ/blob/main/NodeRed/Imagenes/Screenshot%20from%202023-07-24%2014-36-21.png)
@@ -28,7 +28,7 @@ __2. Ingresar a localhost:1880__
     - Indicar el tema a suscribirse **Topic**: _codigoIoT/mqtt/clima_. Para guardar hacer Done.
     ![](https://github.com/DanyHdz23/Daniel_HDZ/blob/main/NodeRed/Imagenes/Screenshot%20from%202023-07-24%2016-37-52.png)
 - __Nodo JSON__
-    Los mensajes enviandos a través de MQTT seran cadenas (*strings*) en notación de un objeto JSON.
+- Los mensajes enviandos a través de MQTT seran cadenas (*strings*) en notación de un objeto JSON.
     - Isertar un nodo JSON de la sección (__parser__) y conectar a la salida del nodo _mqtt in_.
     - Hacer doble click sobre el nodo y asegúrarse que el campo **Action** tenga seleccionado **Always convert to JavaScript object** y hacer Done.
     ![](https://github.com/DanyHdz23/Daniel_HDZ/blob/main/NodeRed/Imagenes/Screenshot%20from%202023-07-24%2016-40-03.png)

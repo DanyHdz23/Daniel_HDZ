@@ -36,7 +36,7 @@ __2. Ingresar a localhost:1880__
     ![](https://github.com/DanyHdz23/Daniel_HDZ/blob/main/NodeRed/Imagenes/Screenshot%20from%202023-07-24%2016-40-03.png)
 
 - __Nodo function__
-- Para redirigir la información de manera correcta, se agragará dos nodos _function_, así se podra obtener una visualización de la temperatura y humedad.
+- Para redirigir la información de manera correcta, se agragará dos nodos _function_, así se podra obtener una visualización de la temperatura y humedad mas adelante.
     
     - Insertar el primer nodo _function_
     - Modificar nobre a **Temperatura** y agregar el siguiente codigo en __On Message__:
@@ -57,3 +57,13 @@ __2. Ingresar a localhost:1880__
     - Hacer Done para cerrar.
     
     ![](https://github.com/DanyHdz23/Daniel_HDZ/blob/main/NodeRed/Imagenes/Screenshot%20from%202023-07-24%2019-27-03.png)
+
+- __Crear una nueva pestaña__
+- Para visualizar una interfaz gráfica con los datos recopilados, necesitamos crear tres grupos: Temperatura, Humedad e Histórico.
+    - Hacer clic en el menú junto al botón Deploy y seleccionar _Dashboard_
+    - Observaras la pestaña creada en el ejercicio anterior "_fecha y hora_", agrega una nueva pestaña (+tab).
+    - Edita la pestaña con el nombre Clima y hacer Update.
+    ![](https://github.com/DanyHdz23/Daniel_HDZ/blob/main/NodeRed/Imagenes/Screenshot%20from%202023-07-24%2022-24-50.png)
+    - Crea tres grupos dentro de la pestaña "_Clima_" (Temperatura, Humedad e Historico), asegurate que **Tab** sea "_Clima_" y da clic en Update para guardar los cambios para cada uno de los grupos.
+    ![](https://github.com/DanyHdz23/Daniel_HDZ/blob/main/NodeRed/Imagenes/Screenshot%20from%202023-07-24%2022-26-45.png)
+    ![](https://github.com/DanyHdz23/Daniel_HDZ/blob/main/NodeRed/Imagenes/Screenshot%20from%202023-07-24%2022-27-20.png)

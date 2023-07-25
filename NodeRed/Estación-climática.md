@@ -39,7 +39,7 @@ __2. Ingresar a localhost:1880__
 - Para redirigir la información de manera correcta, se agragará dos nodos _function_, así se podra obtener una visualización de la temperatura y humedad mas adelante.
     
     - Insertar el primer nodo _function_
-    - Modificar nobre a **Temperatura** y agregar el siguiente codigo en __On Message__:
+    - Modificar nombre a **Temperatura** y agregar el siguiente codigo en __On Message__:
     ```JavaScript
     msg.payload = msg.payload.temp;
     msg.topic = "Temperatura";
@@ -48,7 +48,7 @@ __2. Ingresar a localhost:1880__
     - Hacer Done para cerrar.
 
     - Insertar el segundo nodo _function_
-    - Modificar nobre a **Humedad** y agregar el siguiente codigo en __On Message__:
+    - Modificar nombre a **Humedad** y agregar el siguiente codigo en __On Message__:
     ```JavaScript
     msg.payload = msg.payload.hum; 
     msg.topic = "Humedad"; 

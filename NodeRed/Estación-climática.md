@@ -64,6 +64,9 @@ __2. Ingresar a localhost:1880__
     - Observaras la pestaña creada en el ejercicio anterior "_fecha y hora_", agrega una nueva pestaña (+tab).
     - Edita la pestaña con el nombre Clima y hacer Update.
     ![](https://github.com/DanyHdz23/Daniel_HDZ/blob/main/NodeRed/Imagenes/Screenshot%20from%202023-07-24%2022-24-50.png)
+    
     - Crea tres grupos dentro de la pestaña "_Clima_" (Temperatura, Humedad e Historico), asegurate que **Tab** sea "_Clima_" y da clic en Update para guardar los cambios para cada uno de los grupos.
-    ![](https://github.com/DanyHdz23/Daniel_HDZ/blob/main/NodeRed/Imagenes/Screenshot%20from%202023-07-24%2022-26-45.png)
+    
     ![](https://github.com/DanyHdz23/Daniel_HDZ/blob/main/NodeRed/Imagenes/Screenshot%20from%202023-07-24%2022-27-20.png)
+
+    ![](https://github.com/DanyHdz23/Daniel_HDZ/blob/main/NodeRed/Imagenes/Screenshot%20from%202023-07-24%2022-26-45.png)

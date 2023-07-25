@@ -71,3 +71,30 @@ __2. Ingresar a localhost:1880__
     
     ![](https://github.com/DanyHdz23/Daniel_HDZ/blob/main/NodeRed/Imagenes/Screenshot%20from%202023-07-24%2022-27-20.png)
     ![](https://github.com/DanyHdz23/Daniel_HDZ/blob/main/NodeRed/Imagenes/Screenshot%20from%202023-07-24%2022-26-45.png)
+
+- __Nodo gauge__
+- Estos nodos nos serviran para mostrar indicadores de aguja similares a los velocímetros de los vehículos. Usaremos dos nodos, uno para Temperatura y el otro para Humedad. Los nodos se encuentran en la sección __Dashboard__ de la paleta de nodos.
+    
+    - Conectar un _nodo gauge_ a cada salida de los nodos _function_
+
+    ![](https://github.com/DanyHdz23/Daniel_HDZ/blob/main/NodeRed/Imagenes/Screenshot%20from%202023-07-24%2022-48-36.png)
+
+    - Hacer docle clic en cada uno de los _nodos gaude_, uno para Temperatura y otro para Humedad, editar los siguientes campos segun corresponda:
+
+    ![](https://github.com/DanyHdz23/Daniel_HDZ/blob/main/NodeRed/Imagenes/Screenshot%20from%202023-07-24%2022-53-50.png)
+    ![](https://github.com/DanyHdz23/Daniel_HDZ/blob/main/NodeRed/Imagenes/Screenshot%20from%202023-07-24%2022-54-11.png)
+
+- __Nodo chart__
+- Este nodo nos generará una gráfica, que recibe como valores la Temperatura y Humedad con respecto al tiempo, en una forma lineal. El nodo se encuentra en la seccion __Dashboard__.
+    
+    - Editar el nodo con los siguientes puntos y conectarlo a la salida de los dos nodos _function_:
+    ![](https://github.com/DanyHdz23/Daniel_HDZ/blob/main/NodeRed/Imagenes/Screenshot%20from%202023-07-24%2023-05-26.png)
+    ![](https://github.com/DanyHdz23/Daniel_HDZ/blob/main/NodeRed/Imagenes/Screenshot%20from%202023-07-24%2023-03-47.png)
+
+- __3. Ingresar a localhost:1880/ui__
+
+- El menú se encuentra en la parte superior izquierda, seleccione _clima_ y observará la interfaz gráfica de nuestras variables, pero sin datos.
+
+    ![](https://github.com/DanyHdz23/Daniel_HDZ/blob/main/NodeRed/Imagenes/Screenshot%20from%202023-07-24%2023-18-30.png)
+
+- __4. Enviar mensaje__

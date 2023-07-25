@@ -55,4 +55,5 @@ __2. Ingresar a localhost:1880__
     return msg;
     ```
     - Hacer Done para cerrar.
+    
     ![](https://github.com/DanyHdz23/Daniel_HDZ/blob/main/NodeRed/Imagenes/Screenshot%20from%202023-07-24%2019-27-03.png)

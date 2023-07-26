@@ -2,13 +2,41 @@
 Estación climática que recibe un Json con valores de temperatura y humedad por MQTT y generar un grafico con dashboard.
 
 __1. Preparación de NodeRed y MQTT__
+- No tener arrancado los contenedores, si es así, en la carpeta de DockerCompose escribir el siguiente comando:
+    ```
+    docker compose stop
+    ```
+- Eliminar mosquitto:
+    ```
+    docker ps -a
+    docker rm [_ID del contenedor_]
+    docker images
+    docker rmi [_ID de la imagen de mosquitto_]
+    ```
+- Necesitamos crear un archivo en la carpeta de configuración de mosquitto que se encuentra en DockerVolumes, con el nombre __mosquitto.conf__ y agregar el siguiente código:
+    ```
+    listener 1883 0.0.0.0
+    allow_anonymous true
+    ```
+- Dentro de la carpeta DockerCompose:
+    ```
+    docker compose up -d
+    docker ps -a
+    ```
+    - Verificar que los contenedores esten corriendo.
 
 - Para visualizar el contenedores:
-    - docker ps -a
+    ``` 
+    docker ps -a
+    ```
 - Inicializar el contenedor docker:
-    - docker start _ID DEL CONTENEDOR "NodeRed"_
+    ```
+    docker start _ID DEL CONTENEDOR "NodeRed"_
+    ```
 - Inicializar el contenedor MQTT "mosquitto":
-    - docker start _ID DEL CONTENEDOR "mosquitto"_
+    ```
+    docker start _ID DEL CONTENEDOR "mosquitto"_
+    ```
 
 __2. Ingresar a localhost:1880__
 
@@ -98,3 +126,9 @@ __2. Ingresar a localhost:1880__
     ![](https://github.com/DanyHdz23/Daniel_HDZ/blob/main/NodeRed/Imagenes/Screenshot%20from%202023-07-24%2023-18-30.png)
 
 - __4. Enviar mensaje__
+- Enviar datos de temperatura y humedad a traves de localhost con terminal.
+    ```
+    docker exec -it _ID del contenedor_ mosquitto_pub -h localhost -t codigoIoT/mosquitto/clima -m '{"temp":20,"hum":60}'
+
+    ```
+    ![]()

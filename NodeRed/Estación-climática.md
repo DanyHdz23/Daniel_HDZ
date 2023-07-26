@@ -128,7 +128,7 @@ __2. Ingresar a localhost:1880__
 - __4. Enviar mensaje__
 - Enviar datos de temperatura y humedad a traves de localhost con terminal.
     ```
-    docker exec -it _ID del contenedor_ mosquitto_pub -h localhost -t codigoIoT/mosquitto/clima -m '{"temp":20,"hum":60}'
+    docker exec -it _ID del contenedor_ mosquitto_pub -h localhost -t codigoIoT/mqtt/clima -m '{"temp":20,"hum":60}'
     ```
     ![](https://github.com/DanyHdz23/Daniel_HDZ/blob/main/NodeRed/Imagenes/Screenshot%20from%202023-07-25%2008-52-56.png)
     
